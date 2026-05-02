@@ -1,0 +1,14 @@
+# Netlify configuration for TRainer Fischer Landingpage
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+# Formular:
+# Netlify erkennt das Formular "kontakt" automatisch.
+# Die E-Mail-Benachrichtigung an buero@trainer-fischer.online muss im Netlify Dashboard aktiviert werden:
+# Site configuration > Forms > Form notifications > Add notification > Email notification
