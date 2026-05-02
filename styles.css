@@ -25,7 +25,10 @@ img{max-width:100%;display:block}
 .container > *,section,header,footer,main{max-width:100%}
 .skip-link{position:absolute;left:-999px;top:10px;background:var(--orange);color:#071626;padding:8px 12px;border-radius:10px;z-index:999}
 .skip-link:focus{left:10px}
-.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-light)}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-light)}
+body{padding-top: 86px;}
+section{scroll-margin-top: 110px;}
+section{scroll-margin-top:100px}
 .nav-shell{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand-img{height:58px;width:auto}
 .main-nav{display:flex;align-items:center;gap:24px;color:var(--navy)}
