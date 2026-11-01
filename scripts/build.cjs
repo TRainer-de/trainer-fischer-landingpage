@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');const root=path.join(__dirname,'..'),out=path.join(root,'dist');fs.mkdirSync(out,{recursive:true});for(const n of ['index.html','styles.css','script.js','agb.html','datenschutz.html','impressum.html','assets','trainingsziele'])fs.cpSync(path.join(root,n),path.join(out,n),{recursive:true});console.log('Website nach dist kopiert.');

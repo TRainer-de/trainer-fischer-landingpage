@@ -1,0 +1,1 @@
+{"name":"trainer-fischer-formular","version":"1.0.0","private":true,"scripts":{"build":"node scripts/build.cjs","test":"node --test tests/*.cjs"},"dependencies":{"pdfkit":"0.17.2","nodemailer":"10.2.1","@fontsource/noto-sans":"5.2.10"}}
