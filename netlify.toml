@@ -8,11 +8,6 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
 
-# Formular:
-# Netlify erkennt das Formular "kontakt" automatisch.
-# Die E-Mail-Benachrichtigung an buero@trainer-fischer.online muss im Netlify Dashboard aktiviert werden:
-# Site configuration > Forms > Form notifications > Add notification > Email notification
-
 [build]
 command = "npm run build"
 publish = "dist"
@@ -22,4 +17,4 @@ NODE_VERSION = "22"
 directory = "netlify/functions"
 node_bundler = "esbuild"
 external_node_modules = ["pdfkit"]
-included_files = ["fonts/**", "assets/trainer-fischer-logo.png"]
+included_files = ["fonts/**", "assets/trainer-fischer-logo.png", "node_modules/**"]
